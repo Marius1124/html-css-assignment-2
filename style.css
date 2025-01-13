@@ -1,0 +1,51 @@
+/* Remove default margin, padding and box sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Adds flexbox and center alignments to the body */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.SEDANS {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: hsl(31, 77%, 52%);
+}
+
+.SUVS {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: hsl(184, 100%, 22%);
+}
+
+.LUXURY {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: hsl(179, 100%, 13%);
+}
+
+h2 {
+  font-family: "Big Shoulders Display", serif;
+  font-weight: 700;
+}
+
+p {
+  font-family: "Lexend Deca", serif;
+  font-weight: 400;
+}
