@@ -5,47 +5,116 @@
   box-sizing: border-box;
 }
 
-/* Adds flexbox and center alignments to the body */
+/* Adds flexbox and center alignments to the body
+also ensuring a minimum viewport height */
 body {
   display: flex;
   justify-content: center;
-  align-items: center;
+  background-color: hsl(0, 0%, 95%);
+  min-height: 100vh;
+  font-size: 15px;
 }
+
+h2 {
+  margin: 0 20px 20px 20px;
+  font-family: "Big Shoulders Display", serif;
+  font-weight: 700;
+  color: hsl(0, 0%, 95%);
+}
+
+p {
+  margin: 20px;
+  font-family: "Lexend Deca", serif;
+  font-weight: 400;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+button {
+  margin: 20px;
+  border-radius: 20px;
+  padding: 15px;
+  background-color: hsl(0, 0%, 95%);
+  border: none;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 16px;
+}
+
+/* Everything below here will be relating to all the div classes */
 
 .cards {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   align-items: center;
+  flex-wrap: nowrap;
+  max-width: 1200px;
+  width: 90%;
+  max-width: 768px;
+  height: auto;
 }
 
-.SEDANS {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color: hsl(31, 77%, 52%);
-}
-
-.SUVS {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color: hsl(184, 100%, 22%);
-}
-
+/* styling to all three cards */
+.SEDANS,
+.SUVS,
 .LUXURY {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  flex: 1;
+  padding: 20px;
+  width: 30%;
+}
+
+/* Here I've added the border radius and coloring,
+ to all three cards */
+.SEDANS {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 10px 0 0 10px;
+}
+
+.SUVS {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.LUXURY {
   background-color: hsl(179, 100%, 13%);
+  border-radius: 0 10px 10px 0;
 }
 
-h2 {
-  font-family: "Big Shoulders Display", serif;
-  font-weight: 700;
+/* Here I'm adding the three different icons,
+to each of the cards */
+.SEDANS .icon {
+  background-image: url("images/icon-sedans.svg");
+  background-repeat: no-repeat;
+  margin: 20px;
+  height: 64px;
+  width: 64px;
 }
 
-p {
-  font-family: "Lexend Deca", serif;
-  font-weight: 400;
+.SUVS .icon {
+  background-image: url("images/icon-suvs.svg");
+  background-repeat: no-repeat;
+  margin: 20px;
+  height: 64px;
+  width: 64px;
+}
+
+.LUXURY .icon {
+  background-image: url("images/icon-luxury.svg");
+  background-repeat: no-repeat;
+  margin: 20px;
+  height: 64px;
+  width: 64px;
+}
+
+/* These are to target the button text colors
+ to match the background color */
+.SEDANS button {
+  color: hsl(31, 77%, 52%);
+}
+
+.SUVS button {
+  color: hsl(184, 100%, 22%);
+}
+
+.LUXURY button {
+  color: hsl(179, 100%, 13%);
 }
