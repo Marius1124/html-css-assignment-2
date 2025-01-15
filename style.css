@@ -10,33 +10,37 @@ also ensuring a minimum viewport height */
 body {
   display: flex;
   justify-content: center;
+  align-items: center;
   background-color: hsl(0, 0%, 95%);
-  min-height: 100vh;
   font-size: 15px;
+  height: 100vh;
+  width: 100%;
+  margin: 0;
 }
 
 h2 {
-  margin: 0 20px 20px 20px;
+  margin: 0 0 10px 0px;
   font-family: "Big Shoulders Display", serif;
   font-weight: 700;
   color: hsl(0, 0%, 95%);
+  font-size: 40px;
 }
 
 p {
-  margin: 20px;
+  margin: 20px 0 50px 0px;
   font-family: "Lexend Deca", serif;
   font-weight: 400;
   color: hsla(0, 0%, 100%, 0.75);
 }
 
 button {
-  margin: 20px;
+  margin: 30px 50px 0 0;
   border-radius: 20px;
   padding: 15px;
   background-color: hsl(0, 0%, 95%);
   border: none;
   font-family: "Lexend Deca", sans-serif;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 /* Everything below here will be relating to all the div classes */
@@ -44,11 +48,9 @@ button {
 .cards {
   display: flex;
   align-items: center;
-  flex-wrap: nowrap;
-  max-width: 1200px;
+  max-width: 800px;
   width: 90%;
-  max-width: 768px;
-  height: auto;
+  justify-content: center;
 }
 
 /* styling to all three cards */
@@ -57,13 +59,11 @@ button {
 .LUXURY {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   flex: 1;
-  padding: 20px;
-  width: 30%;
+  padding: 40px;
 }
 
-/* Here I've added the border radius and coloring,
+/* Here I've added the border-radius and coloring,
  to all three cards */
 .SEDANS {
   background-color: hsl(31, 77%, 52%);
@@ -79,12 +79,12 @@ button {
   border-radius: 0 10px 10px 0;
 }
 
-/* Here I'm adding the three different icons,
-to each of the cards */
+/* Here I'm adding the different icons,
+to each of the cards and styling them */
 .SEDANS .icon {
   background-image: url("images/icon-sedans.svg");
   background-repeat: no-repeat;
-  margin: 20px;
+  margin: 10px 0 20px 0;
   height: 64px;
   width: 64px;
 }
@@ -92,7 +92,7 @@ to each of the cards */
 .SUVS .icon {
   background-image: url("images/icon-suvs.svg");
   background-repeat: no-repeat;
-  margin: 20px;
+  margin: 10px 0 20px 0;
   height: 64px;
   width: 64px;
 }
@@ -100,13 +100,13 @@ to each of the cards */
 .LUXURY .icon {
   background-image: url("images/icon-luxury.svg");
   background-repeat: no-repeat;
-  margin: 20px;
+  margin: 10px 0 20px 0;
   height: 64px;
   width: 64px;
 }
 
 /* These are to target the button text colors
- to match the background color */
+ to match their respective background colors */
 .SEDANS button {
   color: hsl(31, 77%, 52%);
 }
