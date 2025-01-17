@@ -82,7 +82,7 @@ button {
 /* Here I'm adding the different icons,
 to each of the cards and styling them */
 .SEDANS .icon {
-  background-image: url("images/icon-sedans.svg");
+  background-image: url("./images/icon-sedans.svg");
   background-repeat: no-repeat;
   margin: 10px 0 20px 0;
   height: 64px;
@@ -90,7 +90,7 @@ to each of the cards and styling them */
 }
 
 .SUVS .icon {
-  background-image: url("images/icon-suvs.svg");
+  background-image: url("./images/icon-suvs.svg");
   background-repeat: no-repeat;
   margin: 10px 0 20px 0;
   height: 64px;
@@ -98,7 +98,7 @@ to each of the cards and styling them */
 }
 
 .LUXURY .icon {
-  background-image: url("images/icon-luxury.svg");
+  background-image: url("./images/icon-luxury.svg");
   background-repeat: no-repeat;
   margin: 10px 0 20px 0;
   height: 64px;
